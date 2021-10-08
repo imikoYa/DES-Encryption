@@ -2,7 +2,7 @@
 Name: DES Encryption
 Python version: Python 2.x
 Builder: miko
-Email: love@immiko.net
+Email: love@imiko.net
 Created time: 2021-10-8-18:24:09
 
 Step!: pip2 install pycryptodome
