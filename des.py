@@ -29,7 +29,7 @@ def encode(key,data):
 
 # DES解密
 def decode(key,data,horb):
-    des=des.new(key,DES.MODE_ECB)
+    des=DES.new(key,DES.MODE_ECB)
     # 判断传入值 不作为长期使用可以不写
     if horb =='hex':
         to_be_data=binascii.a2b_hex(data)
@@ -59,6 +59,6 @@ if __name__=='__main__':
         if not horb:
             print('[-] Encryption mode not define.')
         else:
-            decrypt(key,data,horb)
+            decode(key,data,horb)
     else:
         print('[*] Usage: python des.py -e/-d <key> <data> [Encryption mode (hex or base64)]')
