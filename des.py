@@ -46,10 +46,10 @@ def decode(key,data,horb):
 # 定义主函数 key值必须为8位
 if __name__=='__main__':
     key=data=mode=horb=''
-    mode=sys.argv[1]
-    key=sys.argv[2]
-    data=sys.argv[3]
     try:
+        mode=sys.argv[1]
+        key=sys.argv[2]
+        data=sys.argv[3]
         horb=sys.argv[4]
     except:
         pass
